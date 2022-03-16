@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
+  <head>
+      <script>
+      function ratingSystem() {
+        var input = document.getElementById("inputId").value;
+        alert(input);
+      } 
+      
+      </script>
+  </head>
   <body>
     <h1>ACNH Best Song!</h1>
-
-    <p>FOLDER INDEX This is a paragraph! Here's how you mak: <a href="https://neocities.org">Neocities</a>.</p>
-
+    
     <p>This will help <strong>you</strong> make the <em>best</em> ACNH music list for yorself..</p>
   
     <p>Directions: Please choose a star rating for each song after listening.</p>
@@ -15,7 +22,9 @@
       <li>12AM: <audio controls>
                   <source src="music_hourly_BGM_24Hour_00_Sunny.mp3" type="audio/mpeg">
                   Your browser does not support the audio element.
-                  </audio>
+                  </audio
+                <input type="text" placeholder="Type 1, 2, 3, 4, or 5 for star rating " id="inputId">
+                <button type="button" onclick="ratingSystem();">Submit</button>
       </li>
       
       <li>1AM: <audio controls>
